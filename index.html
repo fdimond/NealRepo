@@ -1,0 +1,110 @@
+<DOCTYPE HTML>
+<html>
+<head>
+	<title>Is neal busy that day?</title>
+	<link rel="stylesheet" type="text/css" href= "neal.css"></link>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="velocity.min.js"></script>
+
+</head>
+
+<body onload="daysF(); dayIndicator()">
+	<div id="header">Is Neal busy that day?</div>
+	<div id="nealborder"><div id="nealhead"></div></div>
+	<div id="botcontainer">
+		<div id="todaycontainer">Today
+			<div id="dayforecast">
+				<div id="within">hey</div>
+			</div>
+		</div> 	
+
+	
+	<div id="weekcontainer">Weekly
+		
+			<div id="weekforecast">
+				<div id="within2">Click below</div>
+			</div>
+			
+			<div id="weekline">
+				<div id="sun">Sun</div>
+				<div id="mon">Mon</div>
+				<div id="tue">Tue</div>
+				<div id="wed">Wed</div>
+				<div id="thu">Thu</div>
+				<div id="fri">Fri</div>
+				<div id="sat">Sat</div>
+			</div>	
+	</div>
+	</div>
+			
+	<div id="break"></div>	
+	
+	<script>
+		var Sunday = "Maybe?";
+		var Monday = "Probably.";
+		var Tuesday = "More than likely.";
+		var Wednesday = "Pretty busy.";
+		var Thursday = "Kinda busy.";
+		var Friday = "Definitely busy! *<p><font size='4'>* It's Fuck Keegan Friday!</font></p>";
+		var Saturday = "Yeah, he's busy.";
+		var dayI = 9;
+	
+	function daysF() {
+		var d = new Date();
+		var weekday = new Array(7);
+		weekday[0] = "Maybe?";
+		weekday[1] = "Probably.";
+		weekday[2] = "More than likely.";
+		weekday[3] = "Pretty busy.";
+		weekday[4] = "Kinda busy.";
+		weekday[5] = "Definitely busy! *<p><font size='4'>* It's Fuck Keegan Friday!</font></p>";
+		weekday[6] = "Yeah, he's busy.";
+
+		var n = weekday[d.getDay()];
+		document.getElementById("within").innerHTML = n;
+		}
+	
+	$("#sun").click(function() {
+		document.getElementById("within2").innerHTML = Sunday;
+		dayI = 0;
+		});	
+		
+	$("#mon").click(function() {
+		document.getElementById("within2").innerHTML = Monday;
+		dayI = 1;
+		});	
+	
+	$("#tue").click(function() {
+		document.getElementById("within2").innerHTML = Tuesday;
+		dayI = 2;
+		});	
+	
+	$("#wed").click(function() {
+		document.getElementById("within2").innerHTML = Wednesday;
+		dayI = 3;
+		});	
+		
+	$("#thu").click(function() {
+		document.getElementById("within2").innerHTML = Thursday;
+		dayI = 4;
+		});	
+		
+	$("#fri").click(function() {
+		document.getElementById("within2").innerHTML = Friday;
+		dayI = 5;
+		});	
+		
+	$("#sat").click(function() {
+		document.getElementById("within2").innerHTML = Saturday;
+		dayI = 6;
+		});	
+		
+	function dayIndicator() {
+		if (dayI == 4) {document.getElementById("header").innerHTML = "eat my cocky";}
+	};	
+	</script>
+
+</body>
+
+</HTML>
+
