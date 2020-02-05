@@ -3,7 +3,7 @@
 
 ### Purpose
 <p>
-Playfulness is an important part of any creative process. This was one of my first websites. It's a tribute to the goofiness of what the internet used to be and a reminder that everything you make doesn't have to be foolproof serious. 
+Playfulness is a crucial movement within any creative process. This was one of my first websites. It's a tribute to the goofiness of what the internet used to be and a reminder that everything you make doesn't have to be foolproof serious. 
 <br>
 </p>
 
